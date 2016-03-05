@@ -7,12 +7,12 @@ library(AppliedPredictiveModeling)
 
 ##Load training and test data
 URL <- 'https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv'
-download.file(url = URL, destfile = '~/training.csv'
+download.file(url = URL, destfile = './training.csv'
                , method = 'auto')
 
 URL <- 'https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv'
 download.file(url = URL 
-               , destfile = '~/test.csv'
+               , destfile = './test.csv'
                , method = 'auto')
 
 ##Data Exploration
