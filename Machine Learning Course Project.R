@@ -7,16 +7,15 @@ library(AppliedPredictiveModeling)
 
 ##Load training and test data
 URL <- 'https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv'
-download.file(url = URL, destfile = 'C:/Users/Ed/Documents/Data Science Cousera Class/Machine learning/training.csv'
+download.file(url = URL, destfile = '~/training.csv'
                , method = 'auto')
 
 URL <- 'https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv'
 download.file(url = URL 
-               , destfile = 'C:/Users/Ed/Documents/Data Science Cousera Class/Machine learning/test.csv'
+               , destfile = '~/test.csv'
                , method = 'auto')
 
 ##Data Exploration
-setwd('C:/Users/Ed/Documents/Data Science Cousera Class/Machine learning')
 
 training <- read.csv(file = 'training.csv', header = TRUE, sep = ",", na.strings = c('NA', ''))
 test     <- read.csv(file = 'test.csv', header = TRUE, sep = ",", na.strings = c('NA', ''))
